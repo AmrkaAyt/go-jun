@@ -1,0 +1,16 @@
+version: '3'
+services:
+  people-service:
+    build: ./people-service
+    ports:
+      - "8080:8080"
+
+  age-service:
+    build: ./age-service
+    ports:
+      - "8081:8081"
+
+  gender-service:
+    build: ./gender-service
+    ports:
+      - "8082:8082"
